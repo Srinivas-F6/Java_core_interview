@@ -4,7 +4,7 @@
 // of data such as lists, sets, and arrays in a simple and efficient manner. Streams help developers perform operations like filtering,
 // sorting, searching, mapping, and collecting data with less code and better readability.
 
-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-
+-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-
 
 // Primitive Streams :
 //   Normally, collections store objects, not primitive values. 
@@ -63,7 +63,7 @@ _-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-
 
 
 
-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-
+-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-
 
 // Features of stream:
 
@@ -95,3 +95,31 @@ _-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-
 
 // 5.Streams Support Functional Programming :
 //   Streams use functional programming concepts. Operations are written using lambda expressions, method references.
+
+
+-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-
+
+// Streams execution follows:
+//   Streams in Java execute using a process called Pipeline Execution.
+//   A Pipeline Execution contains  " Source → Intermediate Operations → Terminal Operation  "
+
+-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-
+
+// Generic Streams :
+//   Generic streams work only with OBJECTS. They do not work directly with primitive types.
+//   Generic streams can be created in many ways. Important methods are...
+//   1.Stream.of() :
+//     Stream.of() is a static method used to create a stream directly from given values or objects.
+//     It is used when values are already available.
+//   2.Arrays.stream() :
+//     Arrays.stream() creates a stream from an array.It converts array elements into stream elements.
+//   3.Collection.stream() :
+//     converts collection data into stream.It is one of the most commonly used stream creation methods.
+
+-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-
+
+// NOTE : Important Points
+// 1.IntStream.of() is used when primitive values are given directly.
+// 2.Arrays.stream() is used when primitive values are already stored inside an array.
+// 3.Intermediate methods return streams.
+// 4.Terminal methods return final values/results.
