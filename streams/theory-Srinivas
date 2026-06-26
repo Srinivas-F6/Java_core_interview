@@ -1,0 +1,125 @@
+                                                    STREAMS FOCUS ON ---> WHAT TO DO  instead of HOW TO DO
+// Streams :
+// Streams in Java were introduced in Java 8 as part of the java.util.stream package. A Stream is used to process collections
+// of data such as lists, sets, and arrays in a simple and efficient manner. Streams help developers perform operations like filtering,
+// sorting, searching, mapping, and collecting data with less code and better readability.
+
+-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-
+
+// Primitive Streams :
+//   Normally, collections store objects, not primitive values. 
+  
+//   There are 3 primitive stream classes :
+//     IntStream    -->  int values
+//     LongStream   -->  long values
+//     DoubleStream -->  double values
+
+  
+//   Categories of primitive Stream methods :
+   
+//     Category	                     Examples
+//      Stream Creation Methods	       of(), range()
+//      Intermediate Methods	           filter(), map()
+//      Terminal Methods	               sum(), average()
+//      Conversion Methods	               boxed(), asDoubleStream()
+
+
+// Stream creation Methods:
+//  Stream creation methods are used to create streams from Arrays, collections, values, ranges.These methods generate stream objects.
+//  The important stream creation methods are : 1. of()
+//                                              2. range()
+//                                              3. Arrays.stream()
+//                                              4. rangeClosed()
+//                                              5. iterate()
+   
+// Intermediate Methods:
+//   Intermediate methods are the operations that process stream data and return another stream as output.
+//   The important intermediate methods are 1.filter()
+//                                          2.map()
+//                                          3.sorted()
+//                                          4.distinct()
+//                                          5.limit()
+  
+// Terminal Methods:
+//   Terminal methods are the methods that produce the final result from a stream. These methods execute the stream pipeline,end the stream processing, close 
+//   the stream permanently. After a terminal method is called, the stream cannot be reused.
+//   The important terminal methods are 1. forEach()
+//                                      2. sum()
+//                                      3. count()
+//                                      4. average()
+//                                      5. reduce()
+
+// Conversion methods:
+//   Conversion methods are used to convert one stream type into another stream type.These methods help in datatype conversion, primitive to object conversion.
+//   sometimes we need to convert:
+//     IntStream → Stream<Integer>
+//     IntStream → DoubleStream
+//     IntStream → LongStream
+//   The important conversional methods are 1. boxed()
+//                                          2. asLongStream()
+//                                          3. asDoubleStream()
+//                                          4. mapToObj()
+//                                          5. mapToDouble()
+
+
+
+-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-
+
+// Features of stream:
+
+// 1.Streams Do Not Store Data : 
+//   Streams do not have their own storage. They process data from collections such as List, Set, or Array.
+
+  //List<Integer> list = Arrays.asList(1,2,3);
+  //Stream<Integer> stream = list.stream();
+
+// 2.Streams support pipeline processing :
+//   Streams allow multiple operations to be connected together in sequence. This sequence is called a stream pipeline.
+//   pipline Structue : Source → Intermediate Operations → Terminal Operation
+
+// 3.Streams are lazy :
+//   Intermediate operations do not execute immediately. Execution starts only after terminal operation is called. This behavior is called lazy execution.
+//   Example:
+//     IntStream.of(1,2,3)
+//              .filter(n -> n > 1);
+//     Nothing executes here................
+
+//     IntStream.of(1,2,3)
+//          .filter(n -> n > 1)
+//          .count();
+//     Now execution starts because terminal method count()..
+
+
+// 4.Streams Support Parallel Processing :
+//   Streams can process data using multiple threads simultaneously. This is called parallel stream processing.
+
+// 5.Streams Support Functional Programming :
+//   Streams use functional programming concepts. Operations are written using lambda expressions, method references.
+
+
+-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-
+
+// Streams execution follows:
+//   Streams in Java execute using a process called Pipeline Execution.
+//   A Pipeline Execution contains  " Source → Intermediate Operations → Terminal Operation  "
+
+-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-
+
+// Generic Streams :
+//   Generic streams work only with OBJECTS. They do not work directly with primitive types.
+//   Generic streams can be created in many ways. Important methods are...
+//   1.Stream.of() :
+//     Stream.of() is a static method used to create a stream directly from given values or objects.
+//     It is used when values are already available.
+//   2.Arrays.stream() :
+//     Arrays.stream() creates a stream from an array.It converts array elements into stream elements.
+//   3.Collection.stream() :
+//     converts collection data into stream.It is one of the most commonly used stream creation methods.
+
+-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-
+
+// NOTE : Important Points
+// 1.IntStream.of() is used when primitive values are given directly.
+// 2.Arrays.stream() is used when primitive values are already stored inside an array.
+// 3.Intermediate methods return streams.
+// 4.Terminal methods return final values/results.
