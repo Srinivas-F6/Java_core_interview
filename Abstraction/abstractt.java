@@ -5,6 +5,8 @@ interface Laptop{
    public void cut();
    public void keyboard();
 
+   public void camera();
+
    default void security(){
     System.out.println("Security");
    }
@@ -77,12 +79,12 @@ class Asus implements Laptop{
 
 public class abstractt {
     public static void main(String[] args) {
-        Lenovo l = new Lenovo();
+        Laptop l = new Lenovo();
         l.camera();
         l.copy();
-        Asus a = new Asus();
-        a.camera();
-        a.cut();
-        a.security();
+        l = new Asus();
+        l.camera();
+        l.cut();
+        l.security();
     }
 }

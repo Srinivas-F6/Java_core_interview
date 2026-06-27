@@ -1,0 +1,59 @@
+Encapsulation:
+Encapsulation is protecting an object's state by hiding its data and allowing controlled access through methods.
+
+A common misconception is that encapsulation means every private field must have a getter and a setter.
+Not necessarily.
+
+
+Abstraction:
+Abstraction is the process of exposing only the essential behavior of an object while hiding its implementation details.
+ It allows the user to focus on what an object does instead of how it does it.
+
+
+An abstract class is a partially implemented class that provides common state (variables) and common behavior (implemented methods)
+ while allowing child classes to provide the remaining implementation.
+
+*** The abstract keyword in Java is used to declare an incomplete class or an incomplete method that must be completed by its subclass.
+Example::
+Suppose you're building software for animals.
+What is common among all animals?
+They eat.
+They sleep.
+But what is different?
+Dog → Barks
+Cat → Meows
+Lion → Roars
+Why use an abstract class?
+Because all animals already share code.
+There is no need to rewrite:  eat();  sleep();  in every class.
+
+
+
+
+An interface is a contract that specifies what a class must do without specifying how it should do it.
+In simple words:
+Use an interface when you want different classes to follow the same contract, even if they are completely unrelated.
+
+Example::
+Now imagine:
+Bird, Airplane, Drone
+
+Are they related?
+❌ No.
+
+A bird is not an airplane.
+A drone is not a bird.
+
+But they all can: Fly
+So we define a contract:
+interface Flyable {
+    void fly();
+}
+
+
+An abstract class is an incomplete class that provides some implementation and leaves the remaining implementation to its child classes.
+
+An interface is a contract that defines a set of methods that implementing classes must provide. It specifies what a class must do, but not how it should do it.
+
+----------------------------------------------------------------------------------------------------------------------------------------
+
