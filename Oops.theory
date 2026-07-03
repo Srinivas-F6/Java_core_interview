@@ -5,6 +5,8 @@ A common misconception is that encapsulation means every private field must have
 Not necessarily.
 
 
+-----------------------------------------------------------------------------------------------------------------------------------------
+
 Abstraction:
 Abstraction is the process of exposing only the essential behavior of an object while hiding its implementation details.
  It allows the user to focus on what an object does instead of how it does it.
@@ -57,3 +59,17 @@ An interface is a contract that defines a set of methods that implementing class
 
 ----------------------------------------------------------------------------------------------------------------------------------------
 
+
+
+Inheritance:
+
+Inheritance is an OOP mechanism in which a child class acquires the accessible fields and methods of a parent class. 
+It promotes code reuse and represents an IS-A relationship between classes.
+
+
+Inheritance allows one class to reuse the fields and methods of another class instead of writing them again.
+
+
+
+
+---------------------------------------------------------------------------------------------------------------------------------------
