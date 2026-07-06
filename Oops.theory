@@ -66,8 +66,31 @@ Inheritance:
 Inheritance is an OOP mechanism in which a child class acquires the accessible fields and methods of a parent class. 
 It promotes code reuse and represents an IS-A relationship between classes.
 
-
 Inheritance allows one class to reuse the fields and methods of another class instead of writing them again.
+
+
+super is a reference variable in Java that refers to the immediate parent class object. It is used to access 
+the parent class's variables, methods, and constructors.
+
+1. Access Parent varibale     super.name;
+2. Access parent Method       super.eat();
+3. Access Parent Constructor  super();
+
+Method Overriding :::
+Method overriding is a feature of inheritance where a child class provides its own implementation for a method that is already defined in
+the parent class with the same method signature.
+
+rules for the method overriding
+✅ Same method name
+✅ Same parameter list
+✅ Same or covariant return type
+✅ Cannot reduce access modifier
+✅ final methods cannot be overridden
+✅ private methods cannot be overridden
+✅ static methods are hidden, not overridden
+✅ Constructors cannot be overridden
+✅ Always use @Override
+
 
 
 
