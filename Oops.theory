@@ -92,7 +92,80 @@ rules for the method overriding
 ✅ Always use @Override
 
 
+Types of Inheritance:
 
+1.Single Inheritance
+Single inheritance is a type of inheritance in which one child class inherits from one parent class.
+
+2.Multilevel Inheritance:
+One class inherits from another, and another class inherits from that.
+Multilevel inheritance is a type of inheritance where a class inherits from another derived class.
+
+3.Hierarchical Inheritance:
+Multiple child classes inherit from the same parent.
+Hierarchical inheritance is a type of inheritance where multiple child classes inherit from a single parent class.
+
+
+4.Multiple Inheritance:
+Multiple inheritance is a type of inheritance where one child class inherits properties and methods from more than one parent class.
+Java does not support it with classes to avoid ambiguity caused by the Diamond Problem.
+
+The Diamond Problem occurs when a child class inherits from two parent classes that both inherit from the same grandparent and provide
+methods with the same signature. Java cannot determine which method implementation should be used, leading to ambiguity.
+
+          Animal
+          sound()
+
+          /      \
+
+Dog               Cat
+sound()        sound()
+
+      \         /
+
+        \      /
+
+          Pet
+        p.sound()
+
+        if we call sound method in Pet. which method should execute, java cannot decide this ambiguity is called Diamonds problem.
+
+
+5.Hybrid Inheritance: 
+Hybrid inheritance is a combination of two or more types of inheritance.
+Java does not support Hybrid Inheritance through classes if it involves Multiple Inheritance. It can be achieved using interfaces.
 
 
 ---------------------------------------------------------------------------------------------------------------------------------------
+
+PolyMorphism:
+Polymorphism is the ability of an object to take many forms. It allows the same method call to perform different actions depending on the object.
+
+Compile-time polymorphism is a type of polymorphism in which the method to be executed is decided by the compiler during compilation.
+It is achieved through method overloading.
+The compiler already knows which method to call before the program starts running.
+It is also called as Static Polymorphism or Early Binding
+
+
+Runtime polymorphism is a type of polymorphism in which the method to be executed is decided during program execution. It is
+ achieved through method overriding.
+
+It is also called Dynamic Polymorphism or Dynamic Method Dispatch or Late Binding
+
+
+Upcasting:
+Upcasting is the process of assigning a child class object to a parent class reference. It happens automatically in Java 
+because every child object IS-A parent object.
+Ex: Animal animal = new Dog();
+
+Dynamic Method Dispatching:
+
+
+
+Downcasting:
+Downcasting is the process of converting a parent class reference back to a child class reference. It must be done explicitly.
+Animal animal = new Dog();
+Dog dog = (Dog)animal;
+dog.run();
+
+
