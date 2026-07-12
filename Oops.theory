@@ -159,6 +159,7 @@ because every child object IS-A parent object.
 Ex: Animal animal = new Dog();
 
 Dynamic Method Dispatching:
+Dynamic Method Dispatch is the mechanism by which Java decides which overridden method to execute at runtime based on the actual object.
 
 
 
