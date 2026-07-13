@@ -15,6 +15,10 @@ Abstraction is the process of exposing only the essential behavior of an object 
 An abstract class is a partially implemented class that provides common state (variables) and common behavior (implemented methods)
  while allowing child classes to provide the remaining implementation.
 
+An abstract class is a class declared with the abstract keyword. It cannot be instantiated and may contain both abstract methods 
+(without a body) and concrete methods (with a body). It is used when classes share common functionality while allowing subclasses to 
+provide specific implementations.
+
 *** The abstract keyword in Java is used to declare an incomplete class or an incomplete method that must be completed by its subclass.
 Example::
 Suppose you're building software for animals.
@@ -57,6 +61,7 @@ An abstract class is an incomplete class that provides some implementation and l
 
 An interface is a contract that defines a set of methods that implementing classes must provide. It specifies what a class must do, but not how it should do it.
 
+A contract is a set of behaviors that every implementing class is obligated to provide.
 ----------------------------------------------------------------------------------------------------------------------------------------
 
 
@@ -72,11 +77,13 @@ Inheritance allows one class to reuse the fields and methods of another class in
 super is a reference variable in Java that refers to the immediate parent class object. It is used to access 
 the parent class's variables, methods, and constructors.
 
+this is a reference to the current object and is used to access current class members or constructors.
+
 1. Access Parent varibale     super.name;
 2. Access parent Method       super.eat();
 3. Access Parent Constructor  super();
 
-Method Overriding :::
+Method Overriding :
 Method overriding is a feature of inheritance where a child class provides its own implementation for a method that is already defined in
 the parent class with the same method signature.
 
@@ -194,3 +201,9 @@ An object is a real-time instance of a class that occupies memory and can access
 A class is a blueprint or template used to create objects. It defines the properties (fields) and behaviors (methods) of an object.
 
 
+4.static
+static means the member belongs to the class itself, not to any particular object. Therefore, only one copy exists and
+is shared by all objects of that class.
+
+5.non-static
+non-static belongs to the object......
