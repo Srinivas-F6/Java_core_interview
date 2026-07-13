@@ -169,6 +169,13 @@ Animal animal = new Dog();
 Dog dog = (Dog)animal;
 dog.run();
 
+Method Overriding:
+Method overriding is the process in which a child class provides its own implementation of a method that already exists in the parent class
+using the same method signature. It enables runtime polymorphism.
+
+Method overloading:
+Method overloading is the process of defining multiple methods with the same name but different parameter lists in the same class.
+It is used to achieve compile-time polymorphism.
 
 --------------------------------------------------------------------------------------------------------------------------------------
 
@@ -180,8 +187,10 @@ principles: Encapsulation, Abstraction, Inheritance, and Polymorphism, which hel
 
 
 2. Object
-An object is a real-world entity that has a state (data) and behavior (methods). It is an instance of a class.
+An object is a real-time instance of a class that occupies memory and can access the properties and behaviors defined in the class.
 
 
 3.class
 A class is a blueprint or template used to create objects. It defines the properties (fields) and behaviors (methods) of an object.
+
+
