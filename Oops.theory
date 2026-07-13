@@ -170,3 +170,18 @@ Dog dog = (Dog)animal;
 dog.run();
 
 
+--------------------------------------------------------------------------------------------------------------------------------------
+
+------------------------------------------------------------------INTERVIEW DEFINITIONS------------------------------------------------
+
+1. What is Object-Oriented Programming (OOP)
+Object-Oriented Programming (OOP) is a programming paradigm that organizes software using objects. It is based on four fundamental 
+principles: Encapsulation, Abstraction, Inheritance, and Polymorphism, which help build modular, reusable, and maintainable applications.
+
+
+2. Object
+An object is a real-world entity that has a state (data) and behavior (methods). It is an instance of a class.
+
+
+3.class
+A class is a blueprint or template used to create objects. It defines the properties (fields) and behaviors (methods) of an object.
