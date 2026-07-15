@@ -1,0 +1,99 @@
+-----------------------------------------------Multi Threading-----------------------------------------------------------
+
+1. Process
+A process is an independent program in execution. It has its own memory, resources, and execution environment.
+
+
+2. Thread
+A thread is the smallest unit of execution within a process. Multiple threads within the same process share memory and resources while executing independently.
+
+
+3. Multithreading
+Multithreading is the ability of a program to execute multiple threads concurrently within the same process, improving responsiveness and resource utilization.
+
+
+4. Main Thread
+The Main Thread is the first thread created automatically by the JVM when a Java application starts. It executes the main() method.
+
+
+5. Thread Class
+The Thread class is a Java class used to create and manage threads. It provides methods such as start(), run(), sleep(), join(), and interrupt().
+
+
+6. Runnable Interface
+Runnable is a functional interface that represents a task to be executed by a thread. It contains a single abstract method, run().
+
+
+7. run() Method
+The run() method contains the code that a thread executes. Calling it directly does not create a new thread; it behaves like a normal method call.
+
+
+8. start() Method
+The start() method creates a new thread, registers it with the JVM and thread scheduler, and causes the JVM to invoke the run() method on that new thread.
+
+
+9. Thread vs Runnable
+Thread is a class used to create and manage threads, whereas Runnable is an interface used to define the task that a thread should execute. Implementing Runnable is generally preferred because it supports better design and avoids the limitation of single inheritance.
+
+
+10. Thread Life Cycle
+The Thread Life Cycle is the sequence of states through which a thread passes from its creation until its termination.
+
+
+11. NEW State
+A thread is in the NEW state after its object is created but before the start() method is invoked.
+
+
+12. RUNNABLE State
+A thread is in the RUNNABLE state after start() is called and is either ready to execute or currently executing.
+
+
+13. BLOCKED State
+A thread enters the BLOCKED state when it is waiting to acquire a monitor lock to enter a synchronized block or method.
+
+
+14. WAITING State
+A thread enters the WAITING state when it waits indefinitely for another thread to perform a specific action.
+
+
+15. TIMED_WAITING State
+A thread enters the TIMED_WAITING state when it waits for a specified amount of time.
+
+
+16. TERMINATED State
+A thread enters the TERMINATED state after completing the execution of its run() method or terminating due to an uncaught exception.
+
+
+17. sleep() Method
+The sleep() method is a static method of the Thread class that pauses the execution of the currently executing thread for a specified period without releasing any locks it holds.
+
+
+18. join() Method
+The join() method is used to make the calling thread wait until the thread on which join() is invoked completes its execution.
+
+
+--------------------------------------------------------------------------------------------------------------------------------------
+
+1. Synchronization
+Synchronization is the mechanism of controlling access to shared resources so that only one thread at a time can execute the critical section, thereby preventing race conditions and ensuring data consistency.
+
+
+2. Race Condition
+A Race Condition occurs when two or more threads simultaneously access and modify shared data, causing inconsistent or unpredictable results.
+
+3. synchronized Keyword
+The synchronized keyword is used to provide mutual exclusion by allowing only one thread at a time to execute a synchronized method or synchronized block for a given lock.
+
+
+
+
+
+-------------Note------------
+Rule 1 (monitor lock)
+Every Java object has its own monitor lock.
+
+Rule 2 (object lock)
+A synchronized instance method acquires the monitor lock of the current object (this).
+
+Rule 3 (how syn works)
+Synchronization is effective only when multiple threads compete for the same monitor lock. If different objects are used, different monitor locks are acquired, so the threads can execute concurrently.
