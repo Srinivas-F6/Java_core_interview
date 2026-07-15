@@ -1,0 +1,99 @@
+------------------------------------------ Exception Handling--------------------------------------------------------------
+
+1. Exception
+An Exception is an unexpected event that occurs during the execution of a program and disrupts its normal flow. It can be handled using Java's exception handling mechanism.
+
+
+2. Exception Handling
+Exception Handling is a mechanism in Java used to detect, handle, and recover from runtime exceptions so that the program can continue executing normally whenever possible.
+
+
+3. Throwable
+Throwable is the root class of Java's exception hierarchy. Every exception or error that can be thrown in Java is a subclass of Throwable.
+
+
+4. Error
+An Error is a serious problem that occurs during program execution and is generally not recoverable by an application. Errors are usually caused by the JVM or the runtime environment.
+
+
+5. Exception
+Exception is a subclass of Throwable that represents conditions that an application can handle using exception handling.
+
+
+6. RuntimeException
+RuntimeException is a subclass of Exception that represents unchecked exceptions occurring during program execution, usually caused by programming mistakes.
+
+
+7. Checked Exception
+A Checked Exception is an exception that is checked by the compiler at compile time. The programmer must either handle it using try-catch or declare it using throws.
+Examples:
+IOException
+SQLException
+FileNotFoundException
+
+
+8. Unchecked Exception
+An Unchecked Exception is an exception that is not checked by the compiler at compile time. These exceptions occur during runtime and handling them is optional.
+Examples:
+ArithmeticException
+NullPointerException
+ArrayIndexOutOfBoundsException
+
+
+
+----------------------------------------------------------------------------------------------------------------------------------
+9. try Block
+A try block is used to enclose code that may throw an exception. It must be followed by at least one catch block, a finally block, or both.
+
+
+10. catch Block
+A catch block is used to handle an exception thrown from the corresponding try block. It executes only when a matching exception occurs.
+
+
+11. finally Block
+A finally block contains code that executes after the try and catch blocks regardless of whether an exception occurs or not. It is primarily used for resource cleanup.
+
+
+12. throw Keyword
+The throw keyword is used to explicitly throw an exception object from a method or block of code.
+
+
+13. throws Keyword
+The throws keyword is used in a method declaration to indicate that the method may throw one or more exceptions, allowing the responsibility of handling them to be passed to the caller.
+
+
+-------------------------------------------------------------------------------------------------------------------------------
+
+14. Multiple Catch Block
+Multiple Catch Blocks allow a single try block to have multiple catch blocks, where each catch block handles a different type of exception. Java executes only the first matching catch block.
+
+
+15. Multi-Catch Block
+A Multi-Catch Block allows a single catch block to handle multiple exception types using the | operator when the handling logic is the same for all exceptions.
+
+-------------------------------------------------------------------------------------------------------------------------------
+
+17. Exception Propagation
+Exception Propagation is the process by which an unhandled exception is passed from the method where it occurs to its caller until it is handled or reaches the JVM.
+
+
+18. Stack Trace
+A Stack Trace is a list of method calls showing the sequence of method executions that led to an exception. It helps identify where the exception occurred.
+
+-------------------------------------------------------------------------------------------------------------------------------
+
+19. Exception Object
+An Exception Object is an object created when an exception occurs. It contains information such as the exception type, exception message, and stack trace.
+
+
+20. getMessage()
+The getMessage() method returns the descriptive message associated with an exception object.
+
+
+21. toString()
+The toString() method returns the exception class name along with its descriptive message.
+
+
+22. printStackTrace()
+The printStackTrace() method prints the complete stack trace, including the exception type, message, and the sequence of method calls where the exception occurred.
+
