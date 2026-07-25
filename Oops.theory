@@ -62,6 +62,9 @@ An abstract class is an incomplete class that provides some implementation and l
 An interface is a contract that defines a set of methods that implementing classes must provide. It specifies what a class must do, but not how it should do it.
 
 A contract is a set of behaviors that every implementing class is obligated to provide.
+
+A concrete class must provide implementations for all inherited abstract methods from an abstract class or all methods
+declared in an interface. If it doesn't, the class itself must be declared abstract.
 ----------------------------------------------------------------------------------------------------------------------------------------
 
 
