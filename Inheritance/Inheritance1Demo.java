@@ -23,4 +23,3 @@ public class Inheritance1Demo {
         System.out.println(sb.bankName());
     }   
 }
--
