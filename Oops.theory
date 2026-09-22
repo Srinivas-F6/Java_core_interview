@@ -210,3 +210,95 @@ is shared by all objects of that class.
 
 5.non-static
 non-static belongs to the object......
+
+
+
+
+
+
+
+----------------------------------------------------Final Keyword and Object class---------------------------------------------
+
+A final reference cannot be reassigned to another object, but the referenced object's mutable state can still be modified.   
+|
+A final method cannot be overridden by subclasses, ensuring that its implementation remains unchanged.
+|
+A final class cannot be extended, preventing inheritance from that class.
+
+
+final variable
+      ↓
+Can't reassign
+
+final method
+      ↓
+Can't override
+
+final class
+      ↓
+Can't extend
+
+
+
+The most important fact is:
+Object is the root class of the Java class hierarchy. Every Java class directly or indirectly inherits from Object.
+
+Ex: 
+  class Student extends Object        ----> we don't need to mention "extends Object"  for class. it automatically takes
+
+Why did java make object the parent of everything?
+Java has thousands of classes. It wants all objects to have some common fundamental behavior.
+so, java provides that common behaviour in Object.
+
+For example, every object should be able to :
+  represent itself as a string
+  compare itself with another object
+  provide a hash value
+  tell what class it belongs to
+
+
+Ex:
+  class Student{}
+  Student s = new Student();
+   s.toString();
+   s.equals(...);
+   s.hashCode();
+   s.getClass();
+
+   we didn't mention these methods inside Student class. Student inherits these methods from Object.
+
+
+Object Class
+Object is the root class of Java. Every class directly or indirectly inherits from it, so every object gets its common methods such as toString(), equals(), hashCode(), and getClass().
+
+
+toString()
+toString() returns a string representation of an object.
+
+
+equals()
+equals() is used to compare two objects for logical equality.
+
+
+hashCode()
+hashCode() returns an integer hash value for an object, mainly used by hash-based collections such as HashMap and HashSet.
+
+
+getClass()
+getClass() returns the runtime class of an object.
+
+
+clone()
+clone() is used to create a copy of an object.
+
+
+wait()
+wait() causes the current thread to wait until another thread signals it using notify() or notifyAll().
+
+
+notify()
+notify() wakes one thread that is waiting on the same object's monitor.
+
+
+notifyAll()
+notifyAll() wakes all threads waiting on the same object's monitor.

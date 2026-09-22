@@ -97,3 +97,6 @@ A synchronized instance method acquires the monitor lock of the current object (
 
 Rule 3 (how syn works)
 Synchronization is effective only when multiple threads compete for the same monitor lock. If different objects are used, different monitor locks are acquired, so the threads can execute concurrently.
+
+
+---------------------------------------------------------------------------------------------------------------------

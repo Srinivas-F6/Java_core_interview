@@ -17,6 +17,8 @@ public class Demo1{
           Employee e = new Employee();
           e.salary(-1000);
           System.out.println(e.balancee());
+          System.out.println(e.toString());
+          System.out.println(e.hashCode());
           
     }
 }
