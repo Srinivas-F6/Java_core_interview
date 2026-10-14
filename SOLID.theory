@@ -8,3 +8,59 @@ SOLID is a set of five software design principles that help us write code that i
 
 
 
+1. Single Responsibility Principle:
+   A class should have only one reason to change, meaning it should have one clearly defined responsibility.
+
+   The important points are:
+   SRP does not mean a class can have only one method. A class can contain multiple methods as long as they belong to the same responsibility.
+   For example, EmployeeRepository can have save(), findById(), update(), and delete() because all of them concern employee persistence.
+   SRP improves maintainability by separating different responsibilities so that changes in one area do not unnecessarily affect another.
+
+   Example: An Employee class should manage employee information, while an EmployeeRepository class handles saving employee data to 
+            the database. If database logic changes, we only need to modify EmployeeRepository.
+
+
+
+2. Open/Close Principle :
+   Software entities such as classes and methods should be open for extension but closed for modification.
+   Open for extension: We should be able to add new behavior.
+   Closed for modification: We should avoid repeatedly changing existing, working code whenever a new behavior is added. 
+
+   OCP reduces the need to modify existing code when new features are introduced, making the application easier to extend and maintain.
+
+   Example: A PaymentService uses a PaymentMethod interface. We can add UPIPayment or CardPayment as new implementations without 
+            modifying the existing PaymentService class.
+
+
+3. Liskov Substitution Principle :
+   The Liskov Substitution Principle (LSP) states that an object of a subclass should be usable wherever an object of its 
+   superclass is expected, without changing the correctness of the program
+
+   In simple terms, a child class must honor the behavior promised by its parent class. 
+
+   For example, if a Bird class provides a fly() method, a Penguin subclass that cannot fly would violate the expected behavior.
+   We can improve the design by separating flying behavior into a Flyable interface and implementing it only in birds that can fly.
+
+
+4. Interface Segregation Principle :
+   Clients(classes) should not be forced to depend on methods they do not need or use.
+   In simple terms, prefer smaller, focused interfaces over one large interface that contains unrelated methods.
+
+   Example: Instead of one Machine interface containing print(), scan(), and fax(), create separate Printer, Scanner, and Fax interfaces.
+            A basic printer then implements only Printer.
+
+
+
+5. Dependency Inversion Principle :
+   High-level modules should not depend directly on low-level modules. Both should depend on abstractions. 
+   Abstractions should not depend on details; details should depend on abstractions.
+
+   First, understand these terms:
+    - High-level module: Contains business logic, such as processing an order.
+    - Low-level module: Handles implementation details, such as saving an order to MySQL.
+    - Abstraction: A contract, usually an interface or abstract class, that hides implementation details.
+   
+   DIP reduces tight coupling by making business logic depend on abstractions rather than concrete implementation details.
+
+   Example: An OrderService should depend on an OrderRepository interface rather than directly on MySQLDatabase. This allows us to 
+            switch database implementations without changing the service's business logic.
