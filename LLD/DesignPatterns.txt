@@ -41,5 +41,28 @@ In Design Patterns, the 23 classic Gang of Four (GoF) patterns are classified in
   Abstract Factory	       Creates families of related objects
   Builder	               Constructs a complex object step by step
   Prototype	               Creates objects by copying an existing prototype
-  
+
 Remember: Creational patterns answer the question, "How should objects be created?"
+
+
+2. Structural Design Patterns :
+  Structural design patterns describe how classes and objects can be combined to form larger structures
+  while keeping the resulting design flexible, reusable and easier to maintain.
+
+Why do we need Structural Patterns?
+  Imagine you are developing a movie investment platform. You have separate components for authentication, payments, movie projects and investor portfolios.
+  As your application grows, you need to organize these components so they work together without creating unnecessary dependencies.
+  Structural patterns help you design relationships and wrappers between objects to achieve this.
+
+  Seven Strucutural Patterns :
+
+  Pattern	    Main purpose
+   Adapter	     Makes incompatible interfaces work together
+   Bridge	     Separates an abstraction from its implementation
+   Composite	 Treats individual objects and groups of objects uniformly
+   Decorator	 Adds responsibilities to an object dynamically
+   Facade	     Provides a simplified interface to a complex subsystem
+   Flyweight	 Shares common state to reduce memory usage
+   Proxy	     Controls access to another object
+
+ Remember: Structural patterns answer the question, "How should classes and objects be organized or connected?"
