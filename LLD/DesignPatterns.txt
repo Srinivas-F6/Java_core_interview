@@ -1,0 +1,45 @@
+What is Design Pattern ?
+A design pattern is a general, reusable solution to a commonly occurring software design problem. 
+It provides a proven approach for organizing classes and objects to make software more maintainable, flexible, and extensible.
+
+
+Important: A design pattern is not a piece of code that you copy and paste. It is a design approach that you adapt to your 
+           particular problem.
+
+
+
+Why do we need Design Patterns ?
+
+Imagine you are developing a payment application. Initially, your application supports only Credit Card payments.
+Now, your requirements change. You need to support UPI, Net Banking and Wallet payments.
+This works, but as more payment methods are added, the method keeps growing and requires modification whenever a new payment type is 
+introduced.
+The problem isn't simply that the code contains if-else statements. The deeper issue is that payment processing for different methods is
+tightly grouped inside one class.
+
+
+
+How can design patterns help ?
+A suitable design pattern, such as the Strategy Pattern, can separate each payment method into its own implementation 
+and allow the application to select the required payment behavior.
+
+
+Three categories of design patterns in java:
+
+In Design Patterns, the 23 classic Gang of Four (GoF) patterns are classified into three categories: Creational, Structural, and Behavioral.
+
+
+1. Creational Design Patterns :
+  Creational design patterns are design patterns that deal with the process of object creation. They provide different ways to
+  create objects while reducing unnecessary dependencies between the code that creates an object and the concrete class of that object.
+
+  Five Creational Patterns :
+
+  Pattern	             Main purpose
+  Singleton	               Restricts a class to one shared instance
+  Factory Method	       Lets subclasses or factory implementations determine which concrete object to create
+  Abstract Factory	       Creates families of related objects
+  Builder	               Constructs a complex object step by step
+  Prototype	               Creates objects by copying an existing prototype
+  
+Remember: Creational patterns answer the question, "How should objects be created?"
