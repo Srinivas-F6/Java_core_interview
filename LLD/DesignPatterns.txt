@@ -66,3 +66,75 @@ Why do we need Structural Patterns?
    Proxy	     Controls access to another object
 
  Remember: Structural patterns answer the question, "How should classes and objects be organized or connected?"
+
+
+3. Behavioral Design Patterns :
+  Behavioral design patterns deal with communication and interaction between objects. They help distribute responsibilities 
+  and define how objects collaborate to perform a task.
+
+
+  Why do we need Behavioral Patterns?
+   Imagine your movie investment platform supports several payment methods.
+   Each payment method has different processing logic. You want to select the appropriate behavior without filling one large 
+   method with multiple if-else conditions.
+   The Strategy Pattern allows you to encapsulate each payment algorithm separately and select the appropriate one when needed.
+   Behavioral patterns help make interactions between objects more organized and flexible.
+
+
+  Eleven Behavioral Patterns :
+
+  Pattern	               Main purpose
+   Strategy	                 Select between interchangeable algorithms
+   Observer	                 Notify interested objects when an event occurs
+   State	                 Change behavior according to an object's current state
+   Command                   Represent a request as an object
+   Chain of Responsibility	 Pass a request through a chain of handlers
+   Template Method	         Define an algorithm's structure while allowing certain steps to vary
+   Iterator	                 Traverse a collection without exposing its internal representation
+   Mediator	                 Coordinate interactions between multiple objects
+   Memento	                 Capture and restore an object's previous state
+   Visitor	                 Add operations to object structures without placing those operations in the element classes
+   Interpreter	             Define and evaluate a simple language or grammar
+
+
+Remember: Behavioral patterns answer the question, "How should objects communicate and share responsibilities?"
+
+
+
+
+
+
+
+The most important patterns are :
+
+Category	    Patterns
+Creational	     Singleton, Factory Method, Builder
+Structural	     Adapter, Decorator
+Behavioral	     Strategy, Observer, State
+
+
+
+I. Creational Design Patterns:
+
+
+
+1. Factory Method Pattern
+  Interview definition:
+  The Factory Method Pattern is a creational design pattern that defines an interface or abstract method for creating an object
+  and allows subclasses to decide which concrete class to instantiate.
+
+  In simple words: It delegates the decision of which concrete object to create to subclasses.
+  Example: A notification system uses different creators to create EmailNotification or SmsNotification objects through the same 
+           factory method.
+
+
+2. Abstract Factory Pattern
+  Interview definition:
+  The Abstract Factory Pattern is a creational design pattern that provides an interface for creating families of related 
+  or dependent objects without specifying their concrete classes.
+
+  In simple words: It provides a common factory interface for creating a group of related objects that are designed to work together.
+  Example: A notification system uses an EmailFactory to create an EmailSender and an EmailFormatter, or an SmsFactory to create 
+           an SmsSender and an SmsFormatter.
+  
+   
