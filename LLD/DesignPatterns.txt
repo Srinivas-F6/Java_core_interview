@@ -136,5 +136,19 @@ I. Creational Design Patterns:
   In simple words: It provides a common factory interface for creating a group of related objects that are designed to work together.
   Example: A notification system uses an EmailFactory to create an EmailSender and an EmailFormatter, or an SmsFactory to create 
            an SmsSender and an SmsFormatter.
+
+
+
+3. Builder Pattern
+  Builder Pattern is a Design patern that helps us to create complext objects easily, by keeping the object creation process flexible,
+  readible, and maintainable.
+
+  A Builder is a class or component responsible for collecting the values required to construct an object and creating the final 
+  object when requested.
   
+
+  Fluent Interface:
+  A Fluent Interface is an API design technique that allows method calls to be chained together in a readable and expressive way. 
+  In Java, it is commonly implemented by returning the current object from methods. The Builder Design Pattern often uses a Fluent Interface
+  to configure an object through chained method calls.
    
