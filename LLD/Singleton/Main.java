@@ -1,0 +1,17 @@
+public class Main{
+    public static void main(String[] args){
+        Calculator c1 = Calculator.getInstance();
+        c1.a = 10;
+        c1.b = 20;
+        System.out.println(c1.sum());
+
+        Calculator c2 = Calculator.getInstance();
+        c2.a = 9;
+        c2.b = 92;
+        System.out.println(c2.sum());
+
+        if(c1 == c2){
+            System.out.println("-------------------");
+        }
+    }
+}
