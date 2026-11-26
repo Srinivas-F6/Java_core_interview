@@ -170,3 +170,26 @@ Instance: An object created from a class.
   Thread safety: The property of working correctly when multiple threads access shared data or code concurrently.
   Global access point: A common method through which different parts of an application obtain the shared instance.
    
+
+
+
+
+Structural Design Patterns:
+  These are the design patterns that deal with how classes and objects are orgainzed to form larger structures.
+
+
+  1. Adapter:
+    The Adapter Design Pattern is a structural design pattern that allows two incompatible interfaces to work together by 
+    converting the interface of an existing class into an interface expected by the client
+
+    In simple words, an Adapter acts as a bridge between two incompatible classes so they can communicate without modifying 
+    their existing code.
+
+
+  2. Decorator:
+    The Decorator Design Pattern is a structural design pattern that allows us to dynamically add additional responsibilities 
+    or functionalities to an existing object without modifying its original class.
+
+    In simple words, Decorator Pattern allows us to add new features to an existing object by wrapping it inside another object.
+
+    
